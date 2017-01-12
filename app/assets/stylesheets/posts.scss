@@ -1,3 +1,76 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+	background-color: #c4deef;
+	padding: 10px;
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.menu {
+	padding: 10px 0px;
+}
+
+li {
+	font-family: Verdana;
+	display: block;
+}
+
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: green;
+    color: white;
+}
+
+
+h1 {
+	font-family: Verdana;
+	font-size: 24px;
+	padding: 10px;
+}
+
+#post {
+	font-family: Verdana;
+	background-color: #fcfcfc;
+	padding: 15px;
+}
+
+#iposts {
+	border: 1px dashed green;
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+#posts {
+	width: 75%;
+	float: left;
+}
+
+#rmenu {
+	float: right;
+	background-color: #fcfcfc;
+	width: 25%;
+	height: 400px;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+#footer {
+	padding: 10px;
+	background-color: #c4deef;
+	border-radius: 0px 0px 10px 10px;
+	font-family: Verdana;
+	clear: both;
+}
+
