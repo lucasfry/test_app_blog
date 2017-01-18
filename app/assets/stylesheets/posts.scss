@@ -2,23 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#header {
-	background-color: #c4deef;
-	padding: 10px;
+html, body {
+	margin: 5px;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px;
+	padding: 0 10px;
+}
+
+.header {
 	text-align: center;
-	border-radius: 10px 10px 0px 0px;
+  background-color: #c4deef;
+  border-radius: 10px 10px 0px 0px;
+	line-height: 100px;
 }
 
-.menu {
-	padding: 10px 0px;
+.header h1 {
+	font-family: 'Verdana', sans-serif;
+	font-size: 50px;
+	margin: 5px 0px;
 }
 
-li {
+.nav {
+	margin-left: 0px;
+}
+
+.nav a {
 	font-family: Verdana;
-	display: block;
+	display: inline;
 }
 
-a:link, a:visited {
+.nav a:link, a:visited {
     background-color: white;
     color: black;
     border: 2px solid green;
@@ -28,49 +50,111 @@ a:link, a:visited {
     display: inline-block;
 }
 
-a:hover, a:active {
+.nav a:hover, a:active {
     background-color: green;
     color: white;
 }
 
 
-h1 {
+.main h2 {
 	font-family: Verdana;
 	font-size: 24px;
-	padding: 10px;
 }
-
-#post {
-	font-family: Verdana;
-	background-color: #fcfcfc;
-	padding: 15px;
-}
-
-#iposts {
-	border: 1px dashed green;
-	margin: 10px 0px;
-	padding: 10px 0px;
-}
-
-#posts {
+.main {
 	width: 75%;
 	float: left;
 }
 
-#rmenu {
+.post {
+	border: 1px dashed green;
+	margin: 10px 0px;
+	padding: 10px 10px;
+}
+
+.post a {
+	text-decoration: none;
+	color: green;
+}
+
+.post a:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+.main p {
+	font-family: Verdana;
+	background-color: #fcfcfc;
+}
+
+.aside {
 	float: right;
 	background-color: #fcfcfc;
 	width: 25%;
-	height: 400px;
+	height: 100%;
 	margin: 10px 0px;
 	text-align: center;
 }
 
-#footer {
+.aside a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px;
+}
+
+.aside a:hover {
+	color:red;
+	text-decoration: underline;
+}
+
+.aside p {
+	text-style: bold;
+}
+
+.footer {
 	padding: 10px;
 	background-color: #c4deef;
 	border-radius: 0px 0px 10px 10px;
 	font-family: Verdana;
+	margin-top: 5px;
 	clear: both;
 }
 
+.abottom {
+	clear: both;
+}
+
+.edit a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+		display: inline;
+		float: left;
+		margin: 5px 10px 5px 0px;
+}
+
+.delete a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+		display: inline;
+		float: left;
+		margin: 5px 10px 5px 0px;
+}
+
+.edit a:hover, a:active {
+    background-color: green;
+    color: white;
+}
+
+.delete a:hover, a:active {
+    background-color: red;
+    color: white;
+		border: 2px solid red;
+}

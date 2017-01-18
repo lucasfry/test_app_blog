@@ -1,7 +1,15 @@
-<h1><%= @post.title %></h1>
-<div id="post"><%= @post.body %></div>
-<br>
-<div class="edit">
-     <%= link_to "Edit post", edit_post_path(@post) %>
-     <%= link_to "Delete Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %>
+<div class="main">
+  <h2><%= @post.title %></h2>
+  <p><%= @post.body %></p>
+  <br>
+</div>
+
+<div class="abottom">
+  <hr>
+  <div class="edit">
+    <%= link_to "Edit post", edit_post_path(@post) %>
+  </div>
+  <div class="delete">
+    <%= link_to "Delete Post", post_path(@post), method: :delete, data: {confirm: "Are you sure?"} %>
+  </div>
 </div>

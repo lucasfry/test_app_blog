@@ -1,20 +1,17 @@
-<div id="posts"> 
+<div class="main">
   <% @posts.each do |post| %>
-    <div id="iposts">
-      <h1><%= post.title %></h1>
-      <div id="post"><%= truncate(post.body, :length => 100) %></div>
+    <div class="post">
+      <h2><%= post.title %></h2>
+      <p><%= truncate(post.body, :length => 100) %></p>
       <br>
       <%= link_to "Read Post", post %>
     </div>
   <% end %>
 </div>
-<div id="rmenu">
-  <h1>Menu</h1>
+
+<div class="aside">
   <p>Recent posts</p>
   <% @posts.each do |post| %>
-  <ul>
-    <li><%= link_to post.title, post %></li>
-  </ul>
+    <%= link_to post.title, post %>
   <% end %>
 </div>
-
